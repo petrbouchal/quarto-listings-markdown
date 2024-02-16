@@ -1,0 +1,32 @@
+```{=html}
+<div class="list quarto-listing-default">
+    <% for (const item of items) { %>
+
+    <div class="quarto-post <%= metadataAttrs(item) %>>
+        <div class="thumbnail">
+            <a href="<%- item.path %>">
+            <!-- preview image tag here -->
+            </a>
+        </a>
+        </div>
+        <div class="body">
+            <a href="<%- item.path %>">
+            <h3 class="no-anchor listing-title"><%= item.title %></h3>
+            <div class="listing-subtitle"><%= item.subtitle %></div>
+            </a>
+            <a href="<%- item.path %>">
+            <div class="delink listing-description">
+                <%= item.description %>
+            </div>
+            </a>
+        </div>
+        <div class="metadata">
+            <a href="<%- item.path %>">
+                <!-- meta stuff here -->
+            </a>
+        </div>
+    </div>
+
+<% } %>
+</div>
+```

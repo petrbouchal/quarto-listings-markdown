@@ -1,0 +1,32 @@
+---
+title: "quarto-listings-markdown"
+listing: 
+- id: "listing-default"
+  type: default
+  contents: 
+  - title: Item *One*
+    subtitle: This contains [a link](https://quarto.org)
+    path: https://google.com
+  - title: Item Two
+    subtitle: This contains just plain text
+    path: https://posit.co
+- id: "listing-custom"
+  template: custom.ejs
+  contents: 
+  - title: Item *One*
+    subtitle: This contains [a link](https://quarto.org)
+    path: https://google.com
+  - title: Item Two
+    subtitle: This contains just plain text
+    path: https://posit.co
+---
+
+## Default listing
+
+:::{#listing-default}
+:::
+
+## Custom listing
+
+:::{#listing-custom}
+:::
